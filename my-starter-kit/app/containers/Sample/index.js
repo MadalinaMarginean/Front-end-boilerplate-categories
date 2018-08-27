@@ -49,9 +49,12 @@ export default class SampleContainer extends React.Component {
   render() {
     return (
       <div>
-        {this.state.data.categories ? this.state.data.categories.map((item, index) =>
-          <Accordion key={index} backgroundColor={'#696969'} categories={item} subcategories={item.subset}/>
-        ) : null}
+        {/*{this.state.data.categories ? this.state.data.categories.map((item, index) => <Accordion*/}
+          {/*key={index}*/}
+          {/*open={false}*/}
+          {/*backgroundColor={'#696969'}*/}
+          {/*categories={item}*/}
+          {/*subcategories={item.subset}/>) : null}*/}
         {this.state.data.categories ? this.state.data.categories.map((item, index) =>
           <Menu key={index} node={item} />
         ) : null}
